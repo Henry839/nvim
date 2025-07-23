@@ -7,4 +7,5 @@ vim.keymap.set("n", "<leader>tt", function() Snacks.terminal(nil, { cwd = LazyVi
 vim.keymap.set("i", "jj", "<ESC>", { silent = true })
 
 vim.keymap.set({ "i", "x", "n", "s" }, "<leader>ww", "<cmd>w<cr><esc>", { desc = "Save File" })
+vim.keymap.set({ "v"}, "<leader>y", "\"+y", { desc = "Yank to +" })
 
