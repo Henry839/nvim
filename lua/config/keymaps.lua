@@ -9,3 +9,4 @@ vim.keymap.set("i", "jj", "<ESC>", { silent = true })
 vim.keymap.set({ "i", "x", "n", "s" }, "<leader>ww", "<cmd>w<cr><esc>", { desc = "Save File" })
 vim.keymap.set({ "v"}, "<leader>y", "\"+y", { desc = "Yank to +" })
 
+vim.keymap.set({"t"}, "<leader>n", "<C-\\><C-n>", {desc="excape to terminal normal mode"})
