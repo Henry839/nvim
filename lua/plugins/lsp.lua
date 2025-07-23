@@ -10,7 +10,7 @@ return {
           settings = {
             python = {
               analysis = {
-                typeCheckingMode = "basic", -- can be "off", "basic" or "strict"
+                typeCheckingMode = "off", -- can be "off", "basic" or "strict"
                 diagnosticSeverityOverrides={
                   reportGeneralTypeIssues="none", -- disable general type issues
                   reportAssignmentType="none", -- disable assignment type issues
