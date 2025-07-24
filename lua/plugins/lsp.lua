@@ -14,7 +14,7 @@ return {
                 diagnosticSeverityOverrides={
                   reportGeneralTypeIssues="none", -- disable general type issues
                   reportAssignmentType="none", -- disable assignment type issues
-                  reportCallIssue="none", -- disable call issues
+                  --reportCallIssue="none", -- disable call issues
                   reportArgumentType="none", -- disable argument type issues
                   reportAttributeAccessIssue="none", -- disable attribute access issues"
                   reportPossiblyUnboundVariable="none", -- disable possibly unbound variable issues"
