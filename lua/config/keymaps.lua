@@ -10,3 +10,7 @@ vim.keymap.set({ "i", "x", "n", "s" }, "<leader>ww", "<cmd>w<cr><esc>", { desc =
 vim.keymap.set({ "v"}, "<leader>y", "\"+y", { desc = "Yank to +" })
 
 vim.keymap.set({"t"}, "<leader>n", "<C-\\><C-n>", {desc="excape to terminal normal mode"})
+
+vim.keymap.set('n', '<Leader>do', '<Plug>(doge-generate)', { desc = 'Generate docstring' })
+vim.keymap.set('n', '<Leader>dn', '<Plug>(doge-comment-jump-forward)', { desc = 'Jump to next docstring' })
+vim.keymap.set('n', '<leader>dN', '<Plug>(doge-comment-jump-backward)', { desc = 'Jump to previous docstring' })
