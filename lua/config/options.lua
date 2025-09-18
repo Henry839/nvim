@@ -5,4 +5,7 @@ vim.g.mapleader = ","
 vim.g.maplocalleader = ","
 vim.g.autoformat = false
 --vim.cmd("filetype plugin on")
+vim.opt.wrap = true
+
+
 
