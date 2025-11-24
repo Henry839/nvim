@@ -14,3 +14,7 @@ vim.keymap.set({"t"}, "<leader>n", "<C-\\><C-n>", {desc="excape to terminal norm
 vim.keymap.set('n', '<Leader>do', '<Plug>(doge-generate)', { desc = 'Generate docstring' })
 vim.keymap.set('n', '<Leader>dn', '<Plug>(doge-comment-jump-forward)', { desc = 'Jump to next docstring' })
 vim.keymap.set('n', '<leader>dN', '<Plug>(doge-comment-jump-backward)', { desc = 'Jump to previous docstring' })
+
+-- codex
+--vim.keymap.set('n', '<leader>ac', '<cmd>Codex<CR>', { desc = 'Toggle codex' })
+
