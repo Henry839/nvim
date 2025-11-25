@@ -16,6 +16,7 @@ vim.api.nvim_create_autocmd("Filetype", {
   desc = "Don't continue comments with o and O",
 })
 
+-- codex fix window size
 local augroup = vim.api.nvim_create_augroup("CodexFixedWidth", { clear = true })
 
 vim.api.nvim_create_autocmd("TermOpen", {
@@ -23,7 +24,7 @@ vim.api.nvim_create_autocmd("TermOpen", {
   pattern = "*codex*",
   callback = function()
     -- optional: set an initial width (e.g. 80 columns)
-    vim.cmd("vertical resize 50")
+    vim.cmd("vertical resize 65")
 
     -- lock width so it doesn't change when other windows open/close
     vim.wo.winfixwidth = true
