@@ -15,16 +15,24 @@ return {
       -- this file can contain specific instructions for your project
       instructions_file = "avante.md",
       -- for example
-      provider = "deepseek",
-      providers = {
-        deepseek = {
-          __inherited_from = "openai",
-          api_key_name = "DEEPSEEK_API_KEY",
-          endpoint = "https://api.deepseek.com",
-          model = "deepseek-coder",
-        },
+      provider = "copilot",
+      -- Avante will automatically use your existing copilot.lua instance
+      -- You can optionally customize the model if needed (e.g., claude-3.5-sonnet is often the default for Copilot Chat)
+      copilot = {
+         -- model = "gpt-4o", -- You can try specifying models if supported by your plan
+         model = "claude-sonnet-4.5",
       },
-      -- provider = "claude",
+      -- provider = "deepseek",
+      -- providers = {
+      --   deepseek = {
+      --     __inherited_from = "openai",
+      --     api_key_name = "DEEPSEEK_API_KEY",
+      --     endpoint = "https://api.deepseek.com",
+      --     model = "deepseek-reasoner",
+      --   },
+      -- },
+      -- provider="codex"
+      -- -- provider = "claude",
       -- providers = {
       --   claude = {
       --     endpoint = "https://api.anthropic.com",
