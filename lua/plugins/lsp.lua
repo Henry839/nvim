@@ -4,27 +4,38 @@ return {
     "neovim/nvim-lspconfig",
     opts = {
       servers = {
-        -- pyright will be automatically installed with mason and loaded with lspconfig
+        -- pyright configuration (keep existing)
         pyright = {
           enabled = true,
           settings = {
             python = {
               analysis = {
-                typeCheckingMode = "off", -- can be "off", "basic" or "strict"
-                diagnosticSeverityOverrides={
-                  reportGeneralTypeIssues="none", -- disable general type issues
-                  reportAssignmentType="none", -- disable assignment type issues
-                  --reportCallIssue="none", -- disable call issues
-                  reportArgumentType="none", -- disable argument type issues
-                  reportAttributeAccessIssue="none", -- disable attribute access issues"
-                  reportPossiblyUnboundVariable="none", -- disable possibly unbound variable issues"
-                }
+                typeCheckingMode = "off",
+                diagnosticSeverityOverrides = {
+                  reportGeneralTypeIssues = "none",
+                  reportAssignmentType = "none",
+                  reportArgumentType = "none",
+                  reportAttributeAccessIssue = "none",
+                  reportPossiblyUnboundVariable = "none",
+                },
               },
             },
           },
-        }
-      }
-    }
+        },
+        -- ADD THIS NEW SECTION FOR RUFF:
+        ruff = {
+          init_options = {
+            settings = {
+              lint = {
+                -- I001: Import block is un-sorted
+                -- UP006: Use `dict` instead of `Dict`
+                ignore = { "I001", "UP006"},
+              },
+            },
+          },
+        },
+      },
+    },
   },
   -- Lean support
   {

@@ -1,6 +1,7 @@
 return {
   {
     "zbirenbaum/copilot.lua",
+    commit = "0f2fd3829dd27d682e46c244cf48d9715726f612", -- Add this line to pin the version
     cmd = "Copilot",
     build = ":Copilot auth",
     event = "BufReadPost",
@@ -49,3 +50,4 @@ return {
     },
   }
 }
+
