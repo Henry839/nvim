@@ -6,3 +6,5 @@ vim.g.maplocalleader = ","
 vim.g.autoformat = false
 --vim.cmd("filetype plugin on")
 
+vim.opt.relativenumber = false -- Disable relative line numbers
+vim.opt.number = true          -- Enable absolute line numbers
