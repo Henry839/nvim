@@ -8,3 +8,4 @@ vim.g.autoformat = false
 
 vim.opt.relativenumber = false -- Disable relative line numbers
 vim.opt.number = true          -- Enable absolute line numbers
+vim.opt.wrap = true            -- Enable line wrapping
