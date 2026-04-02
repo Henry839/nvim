@@ -2,6 +2,8 @@ return {
   {
     "folke/snacks.nvim",
     opts = function(_, opts)
+      opts.lazygit = opts.lazygit or {}
+
       opts.picker = opts.picker or {}
       opts.picker.hidden = true -- for hidden files
       opts.picker.ignored = true -- for .gitignore files
